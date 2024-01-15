@@ -1,0 +1,102 @@
+/*
+
+---00 WHITESPACE SYSTEM / ATOM
+
+    - Spaging system (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+---01 TYPOGRAPHY SYSTEM / ATOM
+
+    - Font sizes (px)
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+    
+    - Font Family: IMB Flex Mono
+
+    - Font weights
+      Default: 300
+
+    - Font line heights:
+      Deffault: 
+
+   
+---02 COLORS SYSTEM  /ATOM
+
+    - Primary color: 
+    - tints (darks): 
+    - shades (lights): 
+    - Greys: #333;
+    - Accents: 
+
+---03 IMAGES SYSTEM / ATOM
+    https://unsplash.com/es/s/fotos/FOOD
+    https://www.uifaces.co/
+    https://heroicons.com/
+
+
+---04 SHADOWS
+
+---05 BORDER RADIUS
+    general: 5px
+
+
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&family=Lobster&family=Noto+Sans+TC:wght@100;500&family=Roboto:ital,wght@1,300&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'IBM Plex Mono', sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    color: #333
+}
+
+.card {
+    background-color: #d8d8d8;
+    width: 450px;
+    margin: 64px auto;
+    /* margin: (top/bot)64px (left/right)48px */
+    /* - Spaging system (px): 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128*/
+    /* margin: (top)48px (right)48px (botttom)48px (left)48px */
+    border: 3px solid black;
+}
+
+.avatar{
+    width: 100%;
+}
+
+.data{
+    padding: 32px;
+}
+
+.intro{
+    margin-bottom: 16px;
+}
+
+h1{
+    margin-bottom: 12px;
+}
+
+.skill-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    
+}
+
+.skill{
+    background-color: rgba(127, 255, 212, 0.544);
+    border-radius: 5px;
+    padding: 2px 12px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
