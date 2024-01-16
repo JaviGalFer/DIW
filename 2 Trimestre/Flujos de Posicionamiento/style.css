@@ -1,0 +1,50 @@
+body {
+  height: 200vh;
+}
+
+.container {
+  width: 50vw;
+  height: 75vh;
+  border: 2px solid black;
+  margin: 50px auto;
+  position: relative;
+  background-color: aquamarine;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+}
+
+.purple {
+  background-color: rgba(128, 0, 128, 0.085);
+  transform: translateY(100px);
+  /*
+  position: relative;
+  top: 100px;*/
+}
+
+.purple2 {
+  background-color: rgba(128, 0, 128, 0.759);
+}
+
+.yellow {
+  background-color: yellow;
+  position: absolute;
+  right: 15px;
+  z-index: 1;
+}
+
+.red {
+  background-color: red;
+  position: fixed;
+  /*top: 5px;*/
+}
+
+.orange {
+  background-color: orange;
+  position: sticky;
+  top: 0;
+}
+
+/*https://caniuse.com/?search=position%20sticky*/
