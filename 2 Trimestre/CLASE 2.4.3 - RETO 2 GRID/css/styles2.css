@@ -1,0 +1,55 @@
+/* Resetear margin y padding desde el selector universal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* El container principal al que le daremos un width será article, le daremos un width de 825px, un margen arriba y debajo de 50 px y lo centraremos en el eje x. */
+article {
+    width: 825px;
+    margin: 50px auto;
+}
+
+/* El título está super pegado arriba y abajo así que le daremos un espacio de 15px arriba y abajo. */
+.product-title {
+    margin: 15px 0;
+}
+
+/* Free shipping, espacio de 20px con el siguiente elto abajo */
+.shipping {
+    margin-bottom: 20px;
+}
+
+/* Separamos tbe el enlace de “more información” y el título de “producto details”, usando el margin-bottom */
+.more-info {
+    margin-bottom: 10px;
+}
+
+.details-title {
+    margin-top: 10px; /* Añadimos margin-top al título para corregir el espacio entre el enlace y el título de "producto details" */
+}
+
+/* La lista hay que separarla un poco de la izda. */
+.details-list {
+    margin-left: 20px;
+}
+
+/* Separamos tbe esos eltos de la lista con un margin bottom de 10px por ejemplo */
+.details-list li {
+    margin-bottom: 10px;
+}
+
+/* Ahora vamos a por el botón: */
+.add-cart {
+    padding: 10px; /* Ajusta el padding según tus preferencias */
+    width: 100%; /* Hace que el botón ocupe todo el ancho de su contenedor padre */
+    border-top: 2px solid black; /* Borde superior negro */
+}
+
+/* Le ponemos un borde superior negro, que solo será apreciable cuando el usuario pase el ratón */
+.add-cart:hover {
+    border-top-color: white; /* Cambiamos el color del borde superior al pasar el ratón */
+    color: black; /* Cambiamos el color del texto al pasar el ratón */
+    background-color: white; /* Cambiamos el fondo al pasar el ratón */
+}
