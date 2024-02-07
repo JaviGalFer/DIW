@@ -17,6 +17,7 @@ body {
     background-color: #d9f2ef;
 }
 
+/* CONTENT SUPERIOR */
 .header{
     /* padding: 0 3rem; */
     height: 100vh;
@@ -24,15 +25,25 @@ body {
     flex-direction: column;
 }
 
+/* NAV SUPERIOR */
 .nav{
     display: flex;
+    position: fixed;
+    top: 0;
     justify-content: space-between;
     align-items: center;
     height: 9rem;
     width: 100%;
-    padding: 0 5rem;
+    padding: 1rem 15rem;
     z-index: 100;
     background-color: #6ed1c2;
+
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: 10px;  
+    border-bottom-right-radius: 10px;
+
+
 }
 
 .nav.sticky{
@@ -41,22 +52,35 @@ body {
 }
 
 .nav-logo{
-    height: 4.5rem;
+    transform: translateX(-6rem);
+    width: 250%;
     transition: all 0.3s;
 }
 
-.nav-links{
+.nav-links-izq{
+    display: flex;
+    align-items: center;
+    /* gap: 0px; */
+    list-style: none;
+    transform: translateX(-9rem);
+}
+
+.nav-links-der{
     display: flex;
     align-items: center;
     list-style: none;
+    transform: translateX(6rem);
 }
+
 
 .nav-item{
     margin-left: 2rem;
     width: 5rem;
     text-align: center;
+    
 }
 
+/* Para los botones links izquierdos */
 .nav-link:link,
 .nav-link:visited{
     background-color: #d9f2ef;
@@ -75,13 +99,32 @@ body {
     background-color: #bbf3ec;
 }
 
+/* Para los iconos derechos del nav */
+.iconLog{
+    width: 82%;
+}
+
+.nav-icon:link,
+.nav-icon:visited{
+    color: #d9f2ef;
+    display: block;
+}
+
+.nav-icon:hover,
+.nav-icon:active{
+    color: #bbf3ec;
+}
+
+/* APARTADO PARA EL HEADER */
 .header-tittle{
-    padding: 0 4.5rem;
+    padding: 5rem 15rem;
+    /* margin-top: 10rem; */
     flex: 1;
-    max-width: 115rem;
+    /* max-width: 150rem; */
     display: grid;
     grid-template-columns: 3fr 2fr;
-    row-gap: 3rem;
+    row-gap: 4rem;
+    column-gap: 15rem;
     align-content: center;
     justify-content: center;
     align-items: start;
@@ -89,12 +132,13 @@ body {
 }
 
 h1{
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     line-height: 1.35;
+    padding-top: 10rem
 }
 
 h4{
-    font-size: 1.4rem;
+    font-size: 2.4rem;
     font-weight: 600;
 }
 
@@ -102,7 +146,7 @@ h4{
     width: 100%;
     grid-column: 2 / 3;
     grid-row: 1 / span 4;
-    transform: translateY(3rem);
+    transform: translateY(-3rem);
 }
 
 .highlight{
@@ -123,3 +167,5 @@ h4{
     background-image: linear-gradient(to top left, #00a991, #00e1ff);
 
 }
+
+
