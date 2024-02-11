@@ -88,7 +88,7 @@ img{
 
 .btn--left{
   left: 0;
-  transform: translateX(-50%);
+  /* transform: translateX(-50%); */
 }
 
 .btn--right{
@@ -100,7 +100,7 @@ img{
   position: absolute;
   bottom: 0;
   left: 44%;
-  transform: translateY(65px);
+  transform: translateY(70px);
 
   display: flex;
   gap: 12px;

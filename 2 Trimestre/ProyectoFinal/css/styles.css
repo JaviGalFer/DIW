@@ -1,12 +1,11 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 html {
     font-size: 62.5%;
-    box-sizing: border-box;
 }
 
 body {
@@ -27,14 +26,18 @@ body {
 
 /* NAV SUPERIOR */
 .nav{
-    display: flex;
+    /*display: flex;*/
+    display: grid; 
+    grid-template-columns: 15rem 3fr 2fr 11rem;
+
+
     position: fixed;
     top: 0;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
-    height: 9rem;
+    /* height: 7rem; */
     width: 100%;
-    padding: 1rem 15rem;
+    /* padding: 1rem 15rem; */
     z-index: 100;
     background-color: #6ed1c2;
 
@@ -42,6 +45,7 @@ body {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     border-bottom-left-radius: 10px;  
     border-bottom-right-radius: 10px;
+
 
 
 }
@@ -52,29 +56,42 @@ body {
 }
 
 .nav-logo{
-    transform: translateX(-6rem);
-    width: 250%;
-    transition: all 0.3s;
+    transform: translateX(3.5rem);
+    /* width: 250%; */
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transition: all 0.3s; */
 }
 
-.nav-links-izq{
+.nav-links-izq ul{
     display: flex;
+    gap: 5rem;
     align-items: center;
     /* gap: 0px; */
+    /* padding-right: 20rem; */
     list-style: none;
-    transform: translateX(-9rem);
+    /* transform: translateX(-9rem); */
 }
+
+
 
 .nav-links-der{
-    display: flex;
-    align-items: center;
-    list-style: none;
-    transform: translateX(6rem);
+    /* display: flex; */
+    /* align-items: center; */
+    /* transform: translateX(6rem); */
+    grid-column: 4 / 5;
+
 }
 
+.nav-links-der ul{
+    list-style: none;
+}
 
 .nav-item{
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
     width: 5rem;
     text-align: center;
     
@@ -83,11 +100,13 @@ body {
 /* Para los botones links izquierdos */
 .nav-link:link,
 .nav-link:visited{
-    background-color: #d9f2ef;
-    font-size: 1.3rem;
+    /* background-color: #d9f2ef; */
+    font-size: 2.3rem;
     font-weight: 500;
     border-radius: 3rem;
-    color: inherit;
+    /* color: inherit; */
+    color: #d9f2ef;
+    font-weight: 700;
     text-decoration: none;
     display: block;
     transition: all 0.3s;
@@ -95,8 +114,9 @@ body {
 
 .nav-link:hover,
 .nav-link:active{
-    color: inherit;
-    background-color: #bbf3ec;
+    /* color: inherit; */
+    /* background-color: #bbf3ec; */
+    color: #bbf3ec;
 }
 
 /* Para los iconos derechos del nav */
@@ -117,14 +137,18 @@ body {
 
 /* APARTADO PARA EL HEADER */
 .header-tittle{
-    padding: 5rem 15rem;
+    /* padding-top: 20rem; */
+    /* padding: 5rem 15rem; */
+    /* width:1000px; 
+    padding:5rem 0;
+    margin:0 auto; */
     /* margin-top: 10rem; */
-    flex: 1;
+    /* flex: 1; */
     /* max-width: 150rem; */
     display: grid;
-    grid-template-columns: 3fr 2fr;
-    row-gap: 4rem;
-    column-gap: 15rem;
+    grid-template-columns: 15rem 3fr 2fr 11rem;
+    /* row-gap: 4rem; */
+    /* column-gap: 15rem; */
     align-content: center;
     justify-content: center;
     align-items: start;
@@ -132,21 +156,49 @@ body {
 }
 
 h1{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
     font-size: 4.5rem;
     line-height: 1.35;
-    padding-top: 10rem
+    padding-top: 10rem;
+    margin-right: 15rem;
+    margin-bottom:5rem;
 }
 
-h4{
+.header-tittle h4:nth-child(3){
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: green;
+    margin-bottom: 5rem;
+}
+
+.header-tittle h4:nth-child(4){
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
     font-size: 2.4rem;
     font-weight: 600;
 }
 
+
+.gridUno{
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+}
+
+.gridDos{
+    grid-column: 4 / 5;
+    grid-row: 1 / -1;
+}
+
 .header-img{
     width: 100%;
-    grid-column: 2 / 3;
-    grid-row: 1 / span 4;
-    transform: translateY(-3rem);
+    /* grid-column: 2 / 3; */
+    grid-column: 3 / 4;
+    grid-row: 1 / span 5;
+    /* transform: translateY(-3rem); */
+    align-self: center;
 }
 
 .highlight{
@@ -169,3 +221,119 @@ h4{
 }
 
 
+/* APARTADO PARA EL CARRUSEL */
+.carrusel{
+    width: 700px;
+    margin: 100px auto;
+    /* background-color: #087f5b; */
+    color: #e6fcf5;
+    padding: 32px;
+    border-radius: 8px;
+    display: flex;
+    gap: 96px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 96px;
+    position: relative;
+}
+
+.slide{
+    position: relative;
+    transform: translateX(-1.5rem);
+}
+
+.img-carrusel{
+    width: 250px;
+    border-radius: 8px;
+    transform: scale(1.7);
+    box-shadow: 0 12px 24px #0000006b;
+    margin-bottom: 25px;
+}
+
+.btn{
+    background-color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    position: absolute;
+    cursor:pointer;
+    /* top: 50; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 6px 12px #0000006b; 
+}
+
+.btn-icon{
+    width: 24px;
+    height: 24px;
+    stroke: #087f5b;
+}
+
+.btn--left{
+    left: 0;
+    /* transform: translateX(-50%); */
+}
+
+.btn--right{
+right: 0;
+transform: translateX(50%);
+}
+
+.dots{
+    position: absolute;
+    bottom: 0;
+    left: 44%;
+    transform: translateX(5px) translateY(70px);
+
+    /* transform: translateX(30px);
+    transform: translateY(70px); */
+
+    display: flex;
+    gap: 12px;
+
+}
+
+.dot{
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    border: 2px solid #087f5b;
+    background-color: white;
+    cursor:pointer;
+}
+
+.dot--fill{
+    background-color: #087f5b;
+}
+
+
+/* Generales */
+
+.section {
+    padding: 5rem 3rem;
+    border-top: 1px solid #000000;
+    height: 100vh;
+    transition: transform 1s, opacity 1s;
+}
+
+
+/* APARTADO PARA EL CARRUSEL */
+.footer{
+    padding: 3rem 3rem;
+    /* height: 100vh; */
+    background-color: #6ed1c2;
+    transition: transform 1s, opacity 1s;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
+    
+    display: flex;
+    bottom: 0;
+    justify-content: space-around;
+    align-items: center;
+    /* height: 9rem; */
+    width: 100%;
+}

@@ -4,44 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
     <title>FinalProyect</title>
 </head>
 <body>
+    <!-- //////////////////////////////////SECTION HEADER////////////////////////// -->
     <header class="header">
-        <nav class="nav">
-            <ul class="nav-links-izq">
-                <li class="nav-item">
-                    <img src="img/logo.png" alt="nav-logo" class="nav-logo">
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Shop</a>
-                </li>
-            </ul>
-            <ul class="nav-links-der">
-                <li class="nav-item">
-                    <a href="#" class="nav-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" 
-                            fill="none" 
-                            viewBox="0 0 24 24" 
-                            stroke-width="1.5" 
-                            stroke="currentColor" 
-                            class="iconLog">
-                            <path stroke-linecap="round" 
-                            stroke-linejoin="round" 
-                            d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-
+        <!-- //////////////////////////////NAV SUPERIOR//////////////////////////// -->
+        <div class="nav">
+            <img src="img/logo.png" alt="nav-logo" class="nav-logo">
+            
+            <nav class="nav-links-izq">
+                <ul class="">
+                    <!-- <li class="nav-item"> -->
+                        <!-- <img src="img/logo.png" alt="nav-logo" class="nav-logo"> -->
+                    <!-- </li> -->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Blogg</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Shop</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="nav-links-der">
+                <ul class="">
+                    <li class="nav-item">
+                        <a href="#" class="nav-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                                fill="none" 
+                                viewBox="0 0 24 24" 
+                                stroke-width="1.5" 
+                                stroke="currentColor" 
+                                class="iconLog">
+                                <path stroke-linecap="round" 
+                                stroke-linejoin="round" 
+                                d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- ////////////////////////////PRINCIPAL/////////////////////// -->
         <div class="header-tittle">
+            <div class="gridUno"></div>
             <h1>
                 Tejemos historias con hilos de 
                 <span class="highlight">creatividad</span> y <span class="highlight">pasión</span>.
@@ -50,11 +60,67 @@
                 Descubre la magia del crochet artesanal con nuestros exclusivos patrones y piezas únicas. Transforma tu inspiración en realidad, desde encantadoras prendas hasta adorables muñecos.
             </h4>
             <h4>¡Bienvenido a un universo de hilos, texturas y creaciones únicas que dan vida a tus sueños tejidos a mano!"</h4>
+
             <img src="img/fotoHeader.png" alt="imagen" class="header-img">
+            <div class="gridDos"></div>
         </div>
     </header>
-    <section>
-        <h1>Esta es la seccion 2</h1>
+    <!-- ////////////////////////////////SECTION2////////////////////////////////// -->
+    <section class="section">
+        <P>Esta es la seccion 2</P>
+        <div class="carrusel">
+            <div class="slide">
+                <img src="img/prueba1.jpg" alt="Chica que se llama Maria" class="img-carrusel">
+            </div>
+            <div class="slide">
+                <img src="img/prueba3.jpg" alt="Ejemplo 2" class="img-carrusel">
+            </div>
+            <div class="slide">
+                <img src="img/Prueba2.jpg" alt="Ejemplo 3" class="img-carrusel">
+            </div>
+            <div class="slide">
+                <img src="img/Prueba4.jpeg" alt="Ejemplo 3" class="img-carrusel">
+            </div>
+            <button class="btn btn--left">
+                <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    fill="none" 
+                    viewBox="0 0 24 24" 
+                    stroke-width="1.5" 
+                    stroke="currentColor" 
+                    class="btn-icon">
+                    <path stroke-linecap="round" 
+                    stroke-linejoin="round" 
+                    d="M15.75 19.5 8.25 12l7.5-7.5" />
+                </svg>
+            </button>
+            <button class="btn btn--right">
+                <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    fill="none" 
+                    viewBox="0 0 24 24" 
+                    stroke-width="1.5" 
+                    stroke="currentColor" class="btn-icon">
+                    <path 
+                        stroke-linecap="round" 
+                        stroke-linejoin="round" 
+                        d="m8.25 4.5 7.5 7.5-7.5 7.5" 
+                    />
+                </svg>
+            </button>
+            <div class="dots">
+                <button class="dot dot--fill">&nbsp</button>
+                <button class="dot">&nbsp</button>
+                <button class="dot">&nbsp</button>
+                <button class="dot  ">&nbsp</button>
+            </div>
+        </div>
     </section>
+    <section class="section">
+        <p>Esta es la seccion </p>
+    </section>
+    <footer class="footer">
+        <p>Esto es el footer</p>
+    </footer>
 </body>
 </html>
