@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="js/script.js" defer></script>
     <title>FinalProyect</title>
 </head>
@@ -20,10 +21,13 @@
                         <!-- <img src="img/logo.png" alt="nav-logo" class="nav-logo"> -->
                     <!-- </li> -->
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Home</a>
+                        <a href="#home" class="nav-link btn--scroll-to">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Blogg</a>
+                        <a href="#" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#section-2" class="nav-link btn--scroll-to">Galeria</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">Shop</a>
@@ -33,7 +37,7 @@
             <nav class="nav-links-der">
                 <ul class="">
                     <li class="nav-item">
-                        <a href="#" class="nav-icon">
+                        <a href="#" class="nav-icon btn--show-modal">
                             <svg xmlns="http://www.w3.org/2000/svg" 
                                 fill="none" 
                                 viewBox="0 0 24 24" 
@@ -46,11 +50,25 @@
                             </svg>
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            fill="none" 
+                            viewBox="0 0 24 24" 
+                            stroke-width="1.5" 
+                            stroke="currentColor" 
+                            class="iconLog">
+                                <path stroke-linecap="round" 
+                                stroke-linejoin="round" 
+                                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
         <!-- ////////////////////////////PRINCIPAL/////////////////////// -->
-        <div class="header-tittle">
+        <div class="header-tittle" id="home">
             <div class="gridUno"></div>
             <h1>
                 Tejemos historias con hilos de 
@@ -66,7 +84,7 @@
         </div>
     </header>
     <!-- ////////////////////////////////SECTION2////////////////////////////////// -->
-    <section class="section">
+    <section class="section" id="section-2">
         <P>Esta es la seccion 2</P>
         <div class="carrusel">
             <div class="slide">
@@ -122,5 +140,25 @@
     <footer class="footer">
         <p>Esto es el footer</p>
     </footer>
+
+    <!-- ////////////////////MODAL HIDDEN///////////// -->
+    <div class="modal hidden">
+        <button class="btn--close-modal">&times;</button>
+        <h2 class="modal__header">
+            <br />
+            <span class="highlight">Registro</span>
+        </h2>
+        <form class="modal__form">
+            <!-- <label>Nombre</label> -->
+            <input type="text" placeholder="Nombre"/><br>
+            <!-- <label>Apellido</label> -->
+            <input type="text" placeholder="Apellido"/><br>
+            <!-- <label>Email</label> -->
+            <input type="email" placeholder="Email"/><br>
+            <input type="password" placeholder="contraseña">
+            <button class="btn-modal">Registrar &rarr;</button>
+        </form>
+    </div>
+    <div class="overlay hidden"></div>
 </body>
 </html>
