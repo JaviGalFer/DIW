@@ -54,6 +54,7 @@ body {
     /* background-color: #6ed1c2; */
     background-color: var(--color-primary);
 
+    
     transition: background-color 0.3s ease;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     border-bottom-left-radius: 10px;  
@@ -118,10 +119,7 @@ body {
 .nav-link:link,
 .nav-link:visited{
     font-size: 2.3rem;
-    font-weight: 500;
-    border-radius: 3rem;
-    /* color: #d9f2ef; */
-    color: #502727;
+    /* border-radius: 3rem; */
     color: var(--color-nav-links);
     font-weight: 600;
     text-decoration: none;
@@ -155,6 +153,11 @@ body {
     color: var(--color-nav-links-hover);
 }
 
+.oculto{
+    display: none;
+    opacity: 0;
+}
+
 /* APARTADO PARA EL HEADER */
 .header-tittle{
     /* padding-top: 20rem; */
@@ -175,7 +178,7 @@ body {
     justify-items: start;
 }
 
-h1{
+.header-h1{
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     font-size: 4.5rem;
@@ -468,6 +471,7 @@ footer{
     /* background-color: #6ed1c2; */
     background-color: var(--color-primary);
     transition: background-color 0.3s ease;
+    min-width: 100%;
 
     box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -494,7 +498,8 @@ footer{
 .socialIcons a i{
     font-size: 2em;
     /* color: black; */
-    color: #63bcaf;
+    /* color: #63bcaf; */
+    color: var(--color-nav-links);
     opacity: 0.9;
     display: flex;
 }
@@ -502,7 +507,8 @@ footer{
 /* Hover Effects */
 
 .socialIcons a:hover{
-    background-color: #63bcaf;
+    /* background-color: #63bcaf; */
+    background-color: var(--color-primary);
     transition: 0.5s;
 }
 
@@ -522,7 +528,8 @@ footer{
 }
 
 .footerNav ul li a{
-    color: white;
+    /* color: white; */
+    color: var(--color-nav-links);
     margin: 20px;
     text-decoration: none;
     font-size: 1.8em;
@@ -553,6 +560,7 @@ footer{
     margin: 0px 5px;
 }
 
+/* MEDIA PARA EL FOOTER */
 @media (max-width: 700px){
     .footerNav ul{
         flex-direction: column;
@@ -561,5 +569,161 @@ footer{
         width: 100%;
         text-align: center;
         margin: 10px;
+    }
+
+    
+    
+}
+
+/* /////MEDIA PARA EL CARRUSEL///// */
+@media (max-width: 900px){
+    .carrusel{
+        width:600px;
+    }
+
+    .img-carrusel{
+        width: 180px;
+    }
+    
+}
+
+/* ///////////////MEDIA///////////// */
+
+/* /////////MEDIA PARA EL NAV///////// */
+@media (max-width: 1370px){
+    .nav-links-izq ul{
+        gap: 3rem;
+    }
+
+    .nav-link:link,
+    .nav-link:visited{
+        font-size: 2.1rem;
+    }
+
+    .nav-logo{
+        width: 70px;
+        height: 70px;
+    }
+
+    .nav{
+        transition: 0.5s ease;
+    }
+}
+
+@media (max-width: 1266px){
+    .nav-logo{
+        width: 60px;
+        height: 60px;
+    }
+    .nav-link:link,
+    .nav-link:visited{
+        font-weight: 500;
+    }
+    .nav{
+        transition: 0.5s ease;
+    }
+}
+
+
+/* //////////////MEDIA PARA LA FOTO HEADER TITTLE/////// */
+
+@media (max-width: 1370px){
+    .header-img{
+        grid-column: 3 /  5;
+        width: 95%;
+    }
+
+    .nav-links-der{
+        transform: translateX(-11rem);
+    
+    }
+}
+
+
+/* //////MEDIA PARA LOS TEXTOS DEL HEADER//////// */
+
+@media (max-width: 1493px){
+    .header-h1{
+        margin-right: 8rem;
+    }
+
+}
+@media (max-width: 1372px){
+    .header-h1{
+        font-size: 4.3rem;
+        margin-right: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    .header-tittle h4:nth-child(3){
+        font-size: 2.4rem;
+        margin-bottom: 3rem;
+    }
+
+    .header-tittle h4:nth-child(4){
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 1266px){
+    .header-h1{
+        font-size: 4.3rem;
+        margin-bottom: 3rem;
+        margin-right: 2rem;
+        grid-column: 1 / 3;
+        padding-left: 60px;
+    }
+
+    .header-tittle h4:nth-child(3){
+        font-size: 2.3rem;
+        margin-bottom: 3rem;
+        grid-column: 1 / 3;
+        padding-left: 60px;
+    }
+
+    .header-tittle h4:nth-child(4){
+        font-size: 2.3rem;
+        grid-column: 1 / 3;
+        padding-left: 60px;
+
+    }
+}
+@media (max-width: 1165px){
+    .header-h1{
+        font-size: 3.3rem;
+        margin-bottom: 2rem;
+        margin-right: 3rem;
+        font-weight: 600;
+    }
+
+    .header-tittle h4:nth-child(3){
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+        
+    }
+
+    .header-tittle h4:nth-child(4){
+        font-size: 2.2rem;
+        
+    }
+}
+
+@media (max-width: 950px){
+    .header-h1{
+        font-size: 3.2rem;
+        margin-bottom: 2rem;
+        margin-right: 3rem;
+        font-weight: 600;
+    }
+
+    .header-tittle h4:nth-child(3){
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+        
+    }
+
+    .header-tittle h4:nth-child(4){
+        font-size: 2.2rem;
+        
     }
 }
