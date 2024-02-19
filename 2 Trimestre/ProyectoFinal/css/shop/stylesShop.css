@@ -1,8 +1,11 @@
 .section-3{
     padding: 3rem 3rem;
-    width: 960px;
-    margin: 100px 400px;
-    height: 100vh;
+    /* width: 960px; */
+    /* margin: 100px 400px; */
+    margin: 2rem 20rem; 
+    /* margin: auto auto; */
+    /* height: 100vh; */
+    height: auto;
     margin-top: 10rem;
     transition: transform 1s, opacity 1s;
     /* display: flex; */
@@ -51,6 +54,7 @@
 .shop {
     box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.1);
     border-radius: 12px;
+    
 }  
 .shop img {
     border-top-left-radius: 12px;

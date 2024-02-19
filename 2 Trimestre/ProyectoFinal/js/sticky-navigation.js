@@ -1,7 +1,7 @@
 // sticky-navigation.js
 export function initializeStickyNavigation() {
     // STICKY NAVIGATION
-
+    console.log('initializeStickyNavigation');
     // Obtén el elemento del nav
     const nav = document.querySelector('.nav');
 
