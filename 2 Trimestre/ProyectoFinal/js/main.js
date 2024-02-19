@@ -8,11 +8,13 @@ import { initializeFilter } from './filter.js';
 import { initializeCardContainer } from './card-container.js';
 
 document.addEventListener('DOMContentLoaded', function () {
+    
     initializeCarrusel();
     initializeModal();
     initializeSmoothScroll();
     initializeStickyNavigation();
     initializeAcordeon();
+    
     initializeFilter();
     initializeCardContainer();
 });

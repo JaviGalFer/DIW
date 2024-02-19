@@ -146,6 +146,11 @@ h3 {
     border-right: 2px solid var(--color-primary);
 }
 
+.shop.hidden {
+    display: none !important;
+}
+
+
 /* .filter-button.active {
     background-color: var(--color-primary);
     color: #fff;

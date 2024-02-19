@@ -1,4 +1,5 @@
 // card-container.js
+import { initializeFilter } from './filter.js';
 export function initializeCardContainer() {
             // CARDS CONTAINER
             const cardContainer = document.getElementById('cardContainer');
@@ -11,6 +12,8 @@ export function initializeCardContainer() {
                         const cardElement = createCardElement(card);
                         cardContainer.appendChild(cardElement);
                     });
+                    // Llama a initializeFilter después de cargar las tarjetas
+                    initializeFilter();
                 });
     
             function createCardElement(card) {
