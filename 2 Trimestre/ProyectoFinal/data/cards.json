@@ -1,0 +1,38 @@
+[
+    {
+        "category": "crochet",
+        "image": "img/Carrusel/nube.jpg",
+        "title": "The Laid Back",
+        "details": [
+        "Leisure and relaxing",
+        "Comfortable for 4h",
+        "Vegan leather",
+        "Weighs 16 kg"
+        ],
+        "price": "250€"
+    },
+    {
+        "category": "patron",
+        "image": "img/Carrusel/cerdi.jpg",
+        "title": "The Worker Bee",
+        "details": [
+            "Work",
+            "Comfortable for 8h",
+            "Vegan leather",
+            "Weighs 22 kg"
+        ],
+        "price": "525€"
+    },
+    {
+        "category": "crochet",
+        "image": "img/Carrusel/pingu.jpg",
+        "title": "The Chair 4/2",
+        "details": [
+            "Leisure and relaxing",
+            "Comfortable all day!",
+            "Organic cotton",
+            "Weighs 80 kg"
+        ],
+        "price": "1450€"
+        }
+]
