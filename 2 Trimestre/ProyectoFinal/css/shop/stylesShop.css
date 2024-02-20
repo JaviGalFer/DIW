@@ -14,8 +14,8 @@
 .grid-3-cols {
 
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 80px;
+    grid-template-columns: repeat(3, 1fr); 
+    column-gap: 5rem; 
 }
 
 .btnCards:link,
@@ -50,33 +50,83 @@
     padding: 8px 12px;
 }
 
-/* CHAIRS */
+/* Crochet */
 .shop {
+    display: flex;
+    flex-direction:column;
     box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.1);
     border-radius: 12px;
-    
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+
+    /* overflow: hidden; */
 }  
 .shop img {
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-    width: 300px;
-    height: 300px;
-    
-}
-.shop-box {
-    padding: 24px;
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    justify-self: center;
+    align-items: center;
+    transition: transform 0.3s, opacity 0.3s;
+
+    /* position: absolute; */
+    /* z-index: 1; */ 
 }
 
+
+.shop-img:hover{
+    transform: scale(1.1); /* Aumentar el tamaño al hacer hover */
+    max-height: 400px;
+    border-radius: 12px; 
+
+
+    /* z-index: 2; */
+}
+
+.shop-box {
+    padding: 24px;
+    position: relative;
+
+    background-color: rgba(255, 255, 255, 0.9); /* Add a semi-transparent background */
+
+    /* z-index: 1;  */
+
+    transition: transform 0.3s;
+}
+
+.shop-img:hover .shop-box {   
+    transform: translateY(-100%); /* Mueve la caja hacia arriba al hacer hover */
+    z-index: 2; 
+}
+
+/*
+.shop-box:hover img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.1);
+    width: 100%;
+    height: 100%;
+    max-height: none; /* Restablecer la altura máxima para mostrar la imagen completa 
+    border-radius: 12px; /* Restablecer el radio de borde para la imagen completa 
+    object-fit: contain; 
+    z-index: 1;
+} 
+*/
+
 h3 {
-    margin-bottom: 24px;
+    margin-bottom: 1rem;
     font-size: 20px;
 }
 
 .shop-details {
     list-style: none;
-    margin-bottom: 48px;
+    margin-bottom: 3rem;
 }
 
 .shop-details li {

@@ -21,7 +21,7 @@ export function initializeCardContainer() {
                 figure.classList.add('shop', card.category);
     
                 figure.innerHTML = `
-                    <img src="${card.image}" alt="${card.title}" />
+                    <img src="${card.image}" class="shop-img" alt="${card.title}" />
                     <div class="shop-box">
                         <h3>${card.title}</h3>
                         <ul class="shop-details">
