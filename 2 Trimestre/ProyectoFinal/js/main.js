@@ -6,8 +6,12 @@ import { initializeStickyNavigation } from './sticky-navigation.js';
 import { initializeAcordeon } from './acordeon.js';
 import { initializeFilter } from './filter.js';
 import { initializeCardContainer } from './card-container.js';
+import { initializeHamburger } from './nav.js';
+
+
 
 document.addEventListener('DOMContentLoaded', function () {
+    initializeHamburger();    
     initializeStickyNavigation();
     initializeCarrusel();
     initializeModal();
