@@ -60,7 +60,7 @@
     /* grid-template-columns: 300px; */
     grid-template-columns: 1fr;
     /* grid-template-rows: 300px 300px; */
-    grid-template-rows: 30rem 30rem; 
+    grid-template-rows: 30rem 24rem; 
     /* flex-direction:column; */
     box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.1);
     border-radius: 12px;
@@ -101,6 +101,10 @@
     padding: 24px;
     /* z-index: 1;  */
     transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .shop-overlay:hover{
@@ -138,6 +142,7 @@ h3 {
 
 .shop-details li {
     display: flex;
+    font-size: 1.5rem;
     align-items: center;
     gap: 12px;
     margin-bottom: 16px;
@@ -157,6 +162,7 @@ h3 {
 .shop-price {
     display: flex;
     justify-content: space-between;
+    gap: 20rem;
     font-size: 20px;
     align-items: center;
 }

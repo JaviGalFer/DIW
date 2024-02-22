@@ -4,71 +4,62 @@
         "image": "img/Carrusel/nube.jpg",
         "title": "Nube",
         "details": [
-        "Leisure and relaxing",
-        "Comfortable for 4h",
-        "Vegan leather",
-        "Weighs 16 kg"
+        "Nube con tamaño 10x10",
+        "",
+        ""
         ],
-        "price": "250€"
+        "price": "15€"
     },
     {
         "category": "patron",
         "image": "img/Carrusel/cerdi.jpg",
         "title": "Cerdito",
         "details": [
-            "Work",
-            "Comfortable for 8h",
-            "Vegan leather",
-            "Weighs 22 kg"
+            "Patron de cerdito",
+            "Incluye vídeo tutoriales"
         ],
-        "price": "525€"
+        "price": "20€"
     },
     {
         "category": "crochet",
         "image": "img/Carrusel/pingu.jpg",
         "title": "Pingu",
         "details": [
-            "Leisure and relaxing",
-            "Comfortable all day!",
-            "Organic cotton",
-            "Weighs 80 kg"
+            "Pingu con tamaño 35x35",
+            "",
+            ""
         ],
-        "price": "1450€"
+        "price": "25€"
     },
     {
         "category": "crochet",
-        "image": "img/Carrusel/nube.jpg",
-        "title": "The Laid Back",
+        "image": "img/Carrusel/evee.jpg",
+        "title": "Evee",
         "details": [
-        "Leisure and relaxing",
-        "Comfortable for 4h",
-        "Vegan leather",
-        "Weighs 16 kg"
+        "Eve tamaño 40x40",
+        "",
+        ""
         ],
-        "price": "250€"
+        "price": "25€"
     },
     {
         "category": "patron",
-        "image": "img/Carrusel/cerdi.jpg",
-        "title": "The Worker Bee",
+        "image": "img/Carrusel/yoda.jpg",
+        "title": "Mini Yoda",
         "details": [
-            "Work",
-            "Comfortable for 8h",
-            "Vegan leather",
-            "Weighs 22 kg"
+            "Patro de Mini Yoda",
+            "Incluye vídeo tutoriales"
         ],
-        "price": "525€"
+        "price": "25€"
     },
     {
-        "category": "crochet",
-        "image": "img/Carrusel/pingu.jpg",
-        "title": "The Chair 4/2",
+        "category": "Patron",
+        "image": "img/Carrusel/pendientes.jpg",
+        "title": "Pendientes",
         "details": [
-            "Leisure and relaxing",
-            "Comfortable all day!",
-            "Organic cotton",
-            "Weighs 80 kg"
+            "Patron para pendientes de diferentes tamaños",
+            "Incluye vídeo tutoriales"
         ],
-        "price": "1450€"
+        "price": "10€"
         }
 ]
